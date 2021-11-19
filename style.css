@@ -1,0 +1,49 @@
+
+* {
+  -webkit-font-smoohting: antialiased;
+}
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    background-color: rgb(168, 167, 167);
+}
+
+
+
+#container {
+  margin: 63px 115px auto;
+}
+
+#uiLess {
+  color: rgba(0,0,0,.2);
+  font-family: Helvetica;
+}
+
+#uiLess input {
+  display: none;
+}
+
+#uiLess label span {
+  letter-spacing: 4px;
+  color: rgba(0,0,0,.2);
+  cursor: pointer;
+  transition: color .4s ease;
+}
+
+#uiLess #checless:checked ~ label[for=checless] span:nth-child(1) {
+  color: #bada55;
+  border-bottom: 1px dotted;
+}
+
+#uiLess #checless:checked ~ label[for=checless] span:nth-child(2) {
+  color: rgba(0,0,0,.2);
+  border-bottom: 1px dotted;
+}
+
+#uiLess label[for=checless] span:nth-child(2) {
+  color: #da2111;
+  border-bottom: 1px dotted;
+} 
